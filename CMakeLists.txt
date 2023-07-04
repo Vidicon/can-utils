@@ -39,6 +39,7 @@ set(PROGRAMS_CANLIB
     log2asc
     log2long
     slcanpty
+    canopenspy
 )
 
 if(HAVE_FORK)

@@ -83,6 +83,22 @@ LOCAL_VENDOR_MODULE := true
 include $(BUILD_EXECUTABLE)
 
 #
+# canopenspy
+#
+
+include $(CLEAR_VARS)
+
+LOCAL_SRC_FILES := canopenspy.c
+LOCAL_MODULE := canopenspy
+LOCAL_MODULE_TAGS := optional
+# LOCAL_STATIC_LIBRARIES := libj1939
+LOCAL_C_INCLUDES := $(LOCAL_PATH)/include/
+LOCAL_CFLAGS := $(PRIVATE_LOCAL_CFLAGS)
+LOCAL_VENDOR_MODULE := true
+
+include $(BUILD_EXECUTABLE)
+
+#
 # j1939sr
 #
 
